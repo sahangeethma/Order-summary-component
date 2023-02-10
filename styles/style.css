@@ -46,7 +46,7 @@ button{
 .container{
     height: 97vh;
     display: flex;
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url(./images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-position: t;
 /* */
@@ -111,7 +111,7 @@ button{
 
 @media (max-width: 375px){
     .container{
-        background-image: url(/images/pattern-background-mobile.svg);
+        background-image: url(./images/pattern-background-mobile.svg);
     }
     .order-summary{
         width: 325px;
