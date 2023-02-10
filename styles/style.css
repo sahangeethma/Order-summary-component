@@ -1,0 +1,123 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    font-family: 'Red Hat Display';
+    background-color: hsl(225, 100%, 94%);
+}
+h2{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 20px;
+}
+h4{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 5px;
+}
+p,a{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+a{
+    color: hsl(245, 75%, 52%);
+}
+a:hover{
+    text-decoration: none;
+    color: hsl(244, 58%, 59%);
+}
+img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+button{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+
+.container{
+    height: 97vh;
+    display: flex;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: t;
+/* */
+}
+.order-summary{
+    left: 0;
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.details{
+    margin: 50px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.price-icon{
+    display: flex;
+}
+.price-icon svg{
+    margin-right: 20px;
+}
+.proceed{
+    color: hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+    border: none ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 10px 10px 10px hsla(223, 47%, 23%, 0.062);
+}
+.proceed:hover{
+    background-color: hsl(244, 58%, 59%);
+}
+.cancel{
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+}
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 375px){
+    .container{
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
+    .order-summary{
+        width: 325px;
+        margin: auto 25px;
+    }
+    .details{
+        margin: 25px;
+    }
+}
